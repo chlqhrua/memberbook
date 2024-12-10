@@ -33,6 +33,7 @@ public class MemberSvcImpl implements MemberSvc{
 		mb.setMbName(param.get("mb_name") + "");
 		mb.setMbEmail(param.get("mb_email") + "");
 		mb.setMbNickName(param.get("mb_nickname") + "");
+		
 		repository.save(mb);
 	}
 
