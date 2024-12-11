@@ -15,7 +15,7 @@ RUN apt-get update \
 &&  apt-get install -y tzdata \
 &&  dpkg-reconfigure --frontend noninteractive tzdata
 
-ENV APP_HOME /app
+ENV APP_HOME=/app
 EXPOSE 8080
 VOLUME /app/upload
 WORKDIR $APP_HOME
